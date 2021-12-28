@@ -8,7 +8,7 @@ AdminNodeManagement.syncActiveNodes()
 AdminServerManagement.startAllServers("node_name")
 AdminNodeManagement.syncActiveNodes()
 
-# changing the App server web container settings to not overwrite the Load balancer URL with ports
+# changing the App server web container settings to not overwrite the Load balancer URL with ports 
 serverId = AdminConfig.getid('/Cell:mxCell01/Node:node_name/Server:appserver/')
 if serverId != "":
     webContainer = AdminConfig.list("WebContainer",serverId)
